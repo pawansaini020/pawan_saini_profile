@@ -6,7 +6,7 @@
  * Free to use under the GPLv2 and later license.
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
- * Contributing author: Tyler Smith (@mbmufffin)
+ * Contributing author: Pawan Saini (@mbmufffin)
  *
  */
 /* ====================================================================================================================
@@ -46,10 +46,11 @@
 }
 .flexslider .slides > li {
   display: none;
+  width: 10%;
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+  width: 10%;
   display: block;
 }
 .flexslider .slides:after {
@@ -91,6 +92,7 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides img {
   height: auto;
+  width: 10%;
   -moz-user-select: none;
 }
 .flex-viewport {
@@ -255,6 +257,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-thumbs img:hover {
   opacity: 1;
+  width: 1%;
 }
 .flex-control-thumbs .flex-active {
   opacity: 1;
@@ -263,13 +266,10 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
-@media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {
-    opacity: 1;
-    left: 10px;
-  }
-  .flex-direction-nav .flex-next {
-    opacity: 1;
-    right: 10px;
+
+@media only screen and (max-width: 700px){
+  .js-fullheight {
+    padding-top: 8%;
+
   }
 }
